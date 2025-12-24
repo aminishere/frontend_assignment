@@ -2,9 +2,9 @@ import Card from "@/components/ui/Card";
 
 export default function MostOrderedFood({ items }) {
   return (
-    <Card>
+    <Card className="h-full flex flex-col">
       <div className="mb-4">
-        <div className="text-sm font-semibold text-gray-700">
+        <div className="text-sm font-semibold text-gray-700 pt-5">
           Most Ordered Food
         </div>
         <span className="text-sm text-gray-400">
@@ -12,7 +12,7 @@ export default function MostOrderedFood({ items }) {
         </span>
       </div>
 
-      <ul>
+      <ul className="flex-1 flex flex-col justify-evenly">
         {items.map((item, index) => (
           <li
             key={index}
