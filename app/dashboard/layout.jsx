@@ -1,8 +1,11 @@
+"use client";
 import Sidebar from "@/components/layout/Sidebar"
 import Topbar from "@/components/layout/Topbar"
+import { SearchProvider } from "@/components/context/SearchContext";
 
 export default function DashboardLayout({ children }) {
   return (
+    <SearchProvider>
     <div className="relative flex h-screen">
 
       {/* Sidebar */}
@@ -25,5 +28,6 @@ export default function DashboardLayout({ children }) {
       <div className="absolute top-16 left-0 w-full border-t border-gray-200" />
 
     </div>
+    </SearchProvider>
   )
 }
