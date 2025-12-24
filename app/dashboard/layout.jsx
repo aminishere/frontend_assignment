@@ -6,7 +6,7 @@ export default function DashboardLayout({ children }) {
     <div className="relative flex h-screen">
 
       {/* Sidebar */}
-      <aside className="w-64 border-r bg-white">
+      <aside className="w-64 border-r bg-gray-50">
         <Sidebar />
       </aside>
 
@@ -16,7 +16,7 @@ export default function DashboardLayout({ children }) {
           <Topbar />
         </header>
 
-        <main className="flex-1 overflow-y-auto p-6 bg-gray-100">
+        <main className="flex-1 overflow-y-auto p-0.1 bg-gray-100">
           {children}
         </main>
       </div>

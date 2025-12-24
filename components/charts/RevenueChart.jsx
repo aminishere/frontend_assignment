@@ -7,7 +7,7 @@ const data = dashboardStats.revenueSeries;
 
 export default function RevenueChart() {
   return (
-    <div className="rounded-sm border bg-white p-5 w-full">
+    <div className="bg-white p-5 w-full">
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <div>

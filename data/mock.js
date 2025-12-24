@@ -1,10 +1,4 @@
 export const dashboardStats = {
-  revenue: "IDR 7.852.000",
-  revenueChange: 2.1,
-
-  orders: "1,284",
-  ordersChange: -3,
-
   revenueSeries: [
   { day: "01", current: 420, last: 300 },
   { day: "02", current: 380, last: 410 },
@@ -20,12 +14,6 @@ export const dashboardStats = {
   { day: "12", current: 490, last: 300 },
 ],
 
-
-  orderTimeDistribution: [
-    { label: "Morning", value: 35 },
-    { label: "Afternoon", value: 40 },
-    { label: "Evening", value: 25 },
-  ],
 };
 
 
@@ -35,4 +23,13 @@ export const mostOrderedFood = [
   { name: "Chicken Noodles", count: 75.000 },
   { name: "Smoothie Fruits", count:  45.000 },
   { name: "Hot Chicken Wings", count: 45.000 },
+];
+
+export const ordersChartData = [
+  { day: "01", current: 32, last: 45 },
+  { day: "02", current: 28, last: 52 },
+  { day: "03", current: 48, last: 30 },
+  { day: "04", current: 44, last: 50 },
+  { day: "05", current: 30, last: 42 },
+  { day: "06", current: 58, last: 46 },
 ];
